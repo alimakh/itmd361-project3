@@ -1,0 +1,218 @@
+/* navigation */
+#main-navbar {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  color: black;
+}
+
+#main-navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#main-navbar ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+#main-navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* index.html */
+.home {
+  background-color: #F0F8FF;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto 20px;
+}
+
+th {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: lightblue;
+}
+
+tr:hover {
+  background-color: lightgray;
+}
+
+.home h1 {
+  font-family: fantasy;
+  text-align: center;
+  font-size: 48px;
+  color: #4682B4;
+
+}
+.home h4 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 16px;
+  color: #4682B4;
+}
+
+.home h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #4682B4;
+  
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 300px; 
+  margin-bottom: 20px; 
+  margin-top: 20px; 
+}
+
+img.hover-effect {
+  transition: transform 0.5s ease-in-out;
+  width: auto;
+  max-height: 100%; 
+}
+
+img.hover-effect:hover {
+  transform: scale(1.1); 
+}
+
+/* resume page */
+
+.resume-page h1 {
+  font-family: fantasy;
+  text-align: center;
+  font-size: 48px;
+  color: #4682B4;
+}
+
+.resume-page {
+  background-color: #F0F8FF;
+}
+
+.ResumeProfile {
+  background-color: #87CEEB;
+  border: 2px solid #4682B4;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  transition: all 0.3s ease-in-out;
+}
+.ResumeProfile:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+  background-color: #4682B4;
+  border: 2px solid #87CEEB;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  transition: all 0.3s ease-in-out;
+}
+.skills:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Education {
+  background-color: #87CEFA;
+  border: 2px solid #4682B4;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  transition: all 0.3s ease-in-out;
+}
+.Education:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* videogames page */
+
+#videogames-page-background {
+  background-color: #F0F8FF;
+}
+#videogames-page-background h1 {
+  font-family: fantasy;
+  text-align: center;
+  font-size: 48px;
+  color: #4682B4;
+}
+
+#videogames-page-background h4 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  color: #4682B4;
+}
+
+
+#videogames-wrapper {
+  width: 1200px;
+  margin: 0 30px;
+  display: flex;
+}
+
+
+.game-section {
+  text-align: left;
+  float: left;
+  width: 350px;
+  border: 1px solid #F0F8FF;
+  text-align: center;
+  margin: 0 10px 30px;
+}
+
+.game-section.bloodborne {
+  background-color: #4682B4;
+}
+
+.game-section.rdr2 {
+  background-color: #DC143C	;
+}
+
+.game-section.ds3 {
+  background-color: #FFFF00;
+}
+
+.game-poster {
+  width: 320px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.game-trailer {
+  width: 320px;
+  height: 180px;
+}
+
+/* a blue frame for all pages */
+
+.page-border {
+  border-left: 10px solid blue;
+  border-right: 10px solid blue;
+  border-bottom: 10px solid blue;
+}
