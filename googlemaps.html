@@ -2,57 +2,9 @@
 <html>
 <head>
     <title>Google Maps</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-    <script>
-        var map;
-        function initMap() {
-            
-            var myLatLng = {lat: 37.7749, lng: -122.4194};
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: myLatLng,
-                zoom: 12
-            });
-
-            
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'San Francisco, CA'
-            });
-
-            
-            var infoWindow = new google.maps.InfoWindow({
-                content: 'Welcome to San Francisco!'
-            });
-            marker.addListener('click', function() {
-                infoWindow.open(map, marker);
-            });
-
-           
-            var satelliteButton = document.getElementById('satellite-button');
-            satelliteButton.addEventListener('click', function() {
-                map.setMapTypeId('satellite');
-            });
-
-            
-            var roadmapButton = document.getElementById('roadmap-button');
-            roadmapButton.addEventListener('click', function() {
-                map.setMapTypeId('roadmap');
-            });
-
-          
-            var zoomInButton = document.getElementById('zoom-in-button');
-            zoomInButton.addEventListener('click', function() {
-                map.setZoom(15);
-            });
-        }
-    </script>
-    <style>
-        #map {
-            height: 400px;
-            width: 100%;
-        }
-    </style>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <ink rel="stylesheet" href="basicamp.css">
 </head>
 <body>
     <header>
@@ -68,9 +20,16 @@
         </nav>
       </header>
       <h1>My Google Maps</h1>
+
       <div id="map"></div>
-      <button id="satellite-button">Satellite</button>
-      <button id="roadmap-button">Roadmap</button>
-      <button id="zoom-in-button">Zoom In</button>
+      <script>
+        var map;
+        function initMap() {
+            map - new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644},
+            });
+        }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     </body>
     </html>
