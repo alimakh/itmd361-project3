@@ -23,6 +23,7 @@
   font-weight: bold;
 }
 
+
 /* index.html */
 .home {
   background-color: #F0F8FF;
@@ -93,31 +94,125 @@ img.hover-effect:hover {
   transform: scale(1.1); 
 }
 
-/* Add media query for screens with a minimum width of 768px */
-@media screen and (min-width: 768px) {
-  /* Update styles for table on larger screens */
-  table {
-    font-size: 16px;
-    width: 80%;
-  }
+/* resume page */
 
-  th {
-    padding: 12px;
-  }
-
-  td {
-    padding: 12px;
-  }
+.resume-page h1 {
+  font-family: fantasy;
+  text-align: center;
+  font-size: 48px;
+  color: #4682B4;
 }
 
-/* Add media query for screens with a minimum width of 992px */
-@media screen and (min-width: 992px) {
-  /* Update styles for navigation bar on larger screens */
-  #main-navbar ul li {
-    margin: 15px;
-  }
+.resume-page {
+  background-color: #F0F8FF;
+}
 
-  #main-navbar ul li a {
-    font-size: 18px;
-  }
+.ResumeProfile {
+  background-color: #87CEEB;
+  border: 2px solid #4682B4;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  transition: all 0.3s ease-in-out;
+}
+.ResumeProfile:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+  background-color: #4682B4;
+  border: 2px solid #87CEEB;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  transition: all 0.3s ease-in-out;
+}
+.skills:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Education {
+  background-color: #87CEFA;
+  border: 2px solid #4682B4;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  transition: all 0.3s ease-in-out;
+}
+.Education:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* videogames page */
+
+#videogames-page-background {
+  background-color: #F0F8FF;
+}
+#videogames-page-background h1 {
+  font-family: fantasy;
+  text-align: center;
+  font-size: 48px;
+  color: #4682B4;
+}
+
+#videogames-page-background h4 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  color: #4682B4;
+}
+
+
+#videogames-wrapper {
+  width: 1200px;
+  margin: 0 30px;
+  display: flex;
+}
+
+
+.game-section {
+  text-align: left;
+  float: left;
+  width: 350px;
+  border: 1px solid #F0F8FF;
+  text-align: center;
+  margin: 0 10px 30px;
+}
+
+.game-section.bloodborne {
+  background-color: #4682B4;
+}
+
+.game-section.rdr2 {
+  background-color: #DC143C	;
+}
+
+.game-section.ds3 {
+  background-color: #FFFF00;
+}
+
+.game-poster {
+  width: 320px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.game-trailer {
+  width: 320px;
+  height: 180px;
+}
+
+/* a blue frame for all pages */
+
+.page-border {
+  border-left: 10px solid blue;
+  border-right: 10px solid blue;
+  border-bottom: 10px solid blue;
 }
