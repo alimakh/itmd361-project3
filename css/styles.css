@@ -59,8 +59,8 @@ tr:hover {
   text-align: center;
   font-size: 48px;
   color: #4682B4;
-
 }
+
 .home h4 {
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
@@ -214,6 +214,17 @@ img.hover-effect:hover {
 #map {
   height: 400px;
   width: 100%;
+}
+
+.googlemaps-page {
+  background-color: #F0F8FF;
+}
+
+.googlemaps-page h1 {
+  font-family: fantasy;
+  text-align: center;
+  font-size: 48px;
+  color: #4682B4;
 }
 
 
