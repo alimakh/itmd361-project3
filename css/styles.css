@@ -209,6 +209,16 @@ img.hover-effect:hover {
   height: 180px;
 }
 
+/* google map page */
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+
+
+
 /* a blue frame for all pages */
 
 .page-border {

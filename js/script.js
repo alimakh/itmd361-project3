@@ -1,6 +1,3 @@
-
-
-<script>
 var map;
 function initMap() {
     // Create a map centered at a specific location
@@ -43,4 +40,3 @@ function initMap() {
         map.setZoom(15);
     });
 }
-</script>
