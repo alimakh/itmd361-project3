@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Google Map</title>
+    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyDYt0SbWGu3kH0TMkNg5zi95wgVPRJngqQ&callback=initMap" async defer></script>
+    <script async src="js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyDYt0SbWGu3kH0TMkNg5zi95wgVPRJngqQ&callback=initMap" async defer></script>
-    <script async src="js/script.js"></script> 
 </head>
 
-<body>
+<body class="googlemaps-page">
     <header>
         <nav id="main-navbar">
             <div>
@@ -21,13 +21,10 @@
             </div>
         </nav>
     </header>
-    <h1 id="googlemaps-heading">Google Maps</h1>
+    <h1>Google Maps</h1>
     <div id="map"></div>
     <button id="satellite-button">Satellite</button>
     <button id="roadmap-button">Roadmap</button>
     <button id="zoom-in-button">Zoom In</button>
 </body>
 </html>
-
-
-

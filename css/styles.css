@@ -216,9 +216,16 @@ img.hover-effect:hover {
   width: 100%;
 }
 
+.googlemaps-page {
+  background-color: #F0F8FF;
+}
 
-
-
+.googlemaps-page h1 {
+  font-family: fantasy;
+  text-align: center;
+  font-size: 48px;
+  color: #4682B4;
+}
 
 /* a blue frame for all pages */
 
