@@ -7,6 +7,17 @@ function initMap() {
         zoom: 12
     });
 
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Chicago, IL',
+        draggable: true
+    });
+    
+    marker.addListener('dragend', function() {
+        console.log('Marker dropped at:', marker.getPosition());
+    });
+    
     
     var marker = new google.maps.Marker({
         position: myLatLng,
