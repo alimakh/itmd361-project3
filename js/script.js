@@ -33,3 +33,4 @@ function initMap() {
         map.setMapTypeId('roadmap');
     });
 }
+
