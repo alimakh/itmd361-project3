@@ -230,19 +230,20 @@ img.hover-effect:hover {
 
 /* mobile friendly screen */
 
+
 @media screen and (max-width: 768px) {
-  /* Add mobile class to body */
+  
   .mobile {
     font-size: 14px;
   }
   
-  /* Adjust header */
+  
   header {
     padding: 10px;
     text-align: center;
   }
   
-  /* Adjust main content */
+  
   h1 {
     font-size: 24px;
     margin-top: 20px;
@@ -278,6 +279,52 @@ img.hover-effect:hover {
     margin-bottom: 5px;
   }
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  header {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  
+  h1 {
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .ResumeProfile h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .ResumeProfile p {
+    font-size: 18px;
+  }
+  
+  .skills h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .skills li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .Education h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .Education p, .Education li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
 
 
 
