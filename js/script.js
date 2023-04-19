@@ -7,16 +7,34 @@ function initMap() {
         zoom: 12
     });
 
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Chicago, IL',
+        draggable: true
+    });
     
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        title: 'San Francisco, CA'
+        title: 'Chicago, IL'
     });
-
     
+    var searchInput = document.getElementById('search-input');
+    var autocomplete = new google.maps.places.Autocomplete(searchInput);
+
+    autocomplete.addListener('place_changed', function() {
+        var place = autocomplete.getPlace();
+        if (place.geometry) {
+          map.panTo(place.geometry.location);
+          map.setZoom(15);
+        } else {
+          alert("The place has no geometry!");
+        }
+      });      
+
     var infoWindow = new google.maps.InfoWindow({
-        content: 'Welcome to San Francisco!'
+        content: 'Welcome to Chicago!'
     });
     marker.addListener('click', function() {
         infoWindow.open(map, marker);
@@ -34,9 +52,19 @@ function initMap() {
         map.setMapTypeId('roadmap');
     });
 
-    
-    var zoomInButton = document.getElementById('zoom-in-button');
-    zoomInButton.addEventListener('click', function() {
-        map.setZoom(15);
+    var geolocateButton = document.getElementById('geolocate-button');
+    geolocateButton.addEventListener('click', function() {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var myLatLng = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+            map.setCenter(myLatLng);
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Your location'
+            });
+        });
     });
 }
