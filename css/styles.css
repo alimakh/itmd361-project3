@@ -217,6 +217,47 @@ img.hover-effect:hover {
 }
 
 
+/* mobile friendly */
+@media screen and (max-width: 767px) {
+  .mobile {
+    background-color: beige;
+  }
+  .welcoming h1 {
+    font-size: 24px;
+  }
+  .welcoming h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .schedule h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .mobile {
+    background-color: bisque;
+  }
+  .welcoming h1 {
+    font-size: 36px;
+  }
+  .welcoming h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .schedule h2 {
+    font-size: 36px;
+    margin-top: 40px;
+  }
+}
+
+
+
+
+
+
 /* a blue frame for all pages */
 
 .page-border {
