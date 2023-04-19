@@ -38,20 +38,4 @@ function initMap() {
     roadmapButton.addEventListener('click', function() {
         map.setMapTypeId('roadmap');
     });
-
-    var geolocateButton = document.getElementById('geolocate-button');
-    geolocateButton.addEventListener('click', function() {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            var myLatLng = {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude
-            };
-            map.setCenter(myLatLng);
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Your location'
-            });
-        });
-    });
 }
