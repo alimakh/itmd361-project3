@@ -28,6 +28,7 @@ function initMap() {
     var infoWindow = new google.maps.InfoWindow({
         content: 'Welcome to Chicago!'
     });
+    
     marker.addListener('click', function() {
         infoWindow.open(map, marker);
     });
